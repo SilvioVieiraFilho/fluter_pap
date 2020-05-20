@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Solicitacao.dart';
 import 'Doacao.dart';
-
+import 'Objetivo.dart';
 class Menu extends StatelessWidget {
 
 
@@ -150,7 +150,10 @@ class Menu extends StatelessWidget {
               ],
               //widget
             ), //row
-            onPressed: () => {},
+            onPressed: () => {Navigator.push(
+    context,
+    MaterialPageRoute(builder:(context)=>  Objetivo() ),
+    ),},
           ), //flatbutton
         ), //sizedbox
       ), //container
