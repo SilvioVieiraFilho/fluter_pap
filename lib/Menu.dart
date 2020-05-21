@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'Solicitacao.dart';
 import 'Doacao.dart';
 import 'Objetivo.dart';
+import 'Login.dart';
 class Menu extends StatelessWidget {
 
 
@@ -57,7 +58,7 @@ class Menu extends StatelessWidget {
       child: SizedBox.expand(
         child: FlatButton(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
                 "FAÇA SUA DOAÇÃO ",
@@ -97,7 +98,7 @@ class Menu extends StatelessWidget {
         child: SizedBox.expand(
           child: FlatButton(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
                   "SOLICITE SUA DOAÇÃO",
@@ -121,7 +122,7 @@ class Menu extends StatelessWidget {
       ), //container
 
 
-      SizedBox( height: 135,  ),
+      SizedBox( height: 90,  ),
 
       Container(
 
@@ -136,10 +137,10 @@ class Menu extends StatelessWidget {
         child: SizedBox.expand(
           child: FlatButton(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  "OBJETIVO DA CAMPANHA",
+                  "OBJETIVO",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -158,6 +159,37 @@ class Menu extends StatelessWidget {
         ), //sizedbox
       ), //container
 
+    SizedBox( height: 50,  ),
+
+
+    Container(
+    height: 40,
+    alignment: Alignment.center,
+    child: FlatButton(
+    child: Text(
+    "VOLTAR ",
+    textAlign: TextAlign.right,
+
+    style: TextStyle(
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+    fontSize: 20,
+
+    ),
+    ), //text
+    onPressed: () => {
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder:(context)=> Login()
+    ),
+    ),
+
+
+
+
+    },
+    ), //flatbutton
+    ), //container
 
 
 
@@ -166,7 +198,7 @@ class Menu extends StatelessWidget {
 
 
 
-      ],
+    ],
     ),//listVIEW
       ),//container
 

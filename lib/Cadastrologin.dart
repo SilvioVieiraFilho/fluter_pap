@@ -1,11 +1,13 @@
 
 import 'package:flutter/material.dart';
+import 'Login.dart';
+
 import 'Menu.dart';
 
 
 class Cadastrologin extends StatelessWidget{
 
-  String phonenumber = '(11) +98722-8986 ';
+
 
 
   Widget build(BuildContext context) {
@@ -207,7 +209,7 @@ class Cadastrologin extends StatelessWidget{
                   ), //row
                   onPressed: () => {Navigator.push(
                   context,
-                  MaterialPageRoute(builder:(context)=> Menu() ),
+                  MaterialPageRoute(builder:(context)=>  Login() ),
                 ),
                 },
                 ), //flatbutton

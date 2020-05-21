@@ -10,8 +10,8 @@ class Objetivo extends StatelessWidget {
       body: Container(
       padding: EdgeInsets.only(
       top: 60,
-      left: 40,
-      right: 60,
+      left:80,
+      right: 80,
 
     ),
 
@@ -21,16 +21,37 @@ class Objetivo extends StatelessWidget {
     children: <Widget>[
 
       SizedBox(
-        height: 300,
+        height: 30,
       ),
 
+        Text(
+          "OBJETIVO",
+
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontSize: 40,
+          ), //style ,
+
+
+
+        ),//text
+
+
+        SizedBox(
+          height: 30,
+        ),
 
 
       Text(
-        " NOSSA APLICAÇÃO FOI CRIADA COM O INTUITO DE ARRECADAR DOAÇOES  "
-            "PARA DISTRIBUIR PARA AS PESSOAS MAIS NECESSITADAS  . ",
+
+
+        "O objetivo do projeto junto mas próximos  é arrecadar alimentos , produtos de limpeza e higiene pessoal "
+        "para pessoas  que estão necessitadas desses items."
+            "No aplicativo você tem a opção de doar ou de solicitar algum material em necessidade. ",
+
         style: TextStyle(
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w400,
           color: Colors.black,
           fontSize: 20,
         ), //style ,
@@ -40,18 +61,18 @@ class Objetivo extends StatelessWidget {
 ),//text
 
         SizedBox(
-          height: 80,
+          height: 150,
         ),
 
 
 
 
         Container(
-          height: 60,
+          height: 40,
           alignment: Alignment.centerLeft,
           decoration: BoxDecoration(
             color: Color(0xFFF0660000),
-            borderRadius: BorderRadius.all(Radius.circular(18.0)),
+            borderRadius: BorderRadius.all(Radius.circular(5.0)),
 
           ), //boxdecoration
 

@@ -128,7 +128,7 @@ class Solitacao extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      "SOLICITAR",
+                      "ENVIAR",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,

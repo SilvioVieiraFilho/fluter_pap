@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 
 import 'Cadastrologin.dart';
+import 'Menu.dart';
 
-
-class LoginPage extends StatelessWidget {
+class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,8 +22,20 @@ class LoginPage extends StatelessWidget {
               height: 128,
               child: Image.asset("image/teste.png"),
             ),
+
+        Text(
+          "JUNTOS PELO PRÓXIMO  ",
+          textAlign: TextAlign.center,
+
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontSize: 30,
+
+          ),
+        ), //text
             SizedBox(
-              height: 20,
+              height: 40,
             ),
             TextFormField(
               keyboardType: TextInputType.emailAddress,
@@ -94,7 +106,10 @@ class LoginPage extends StatelessWidget {
                       ), //text
                     ], //widget
                   ), //row
-                  onPressed: () => {},
+                  onPressed: () => {Navigator.push(
+                  context,
+                  MaterialPageRoute(builder:(context)=>  Menu() ),
+                ),            },
                 ), //flatbutton
               ), //sizedbox
             ), //container
