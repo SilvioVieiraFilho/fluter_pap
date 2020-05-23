@@ -15,7 +15,7 @@ class Objetivo extends StatelessWidget {
 
     ),
 
-    color: Colors.lightBlueAccent,
+    color: Colors.white,
 
     child: ListView(
     children: <Widget>[
