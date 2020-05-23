@@ -3,6 +3,8 @@ import 'Solicitacao.dart';
 import 'Doacao.dart';
 import 'Objetivo.dart';
 import 'Login.dart';
+import 'Tabela.dart';
+
 class Menu extends StatelessWidget {
 
 
@@ -43,7 +45,7 @@ class Menu extends StatelessWidget {
 
 
 
-      SizedBox( height: 120,  ),
+      SizedBox( height: 90,  ),
 
       Container(
 
@@ -81,7 +83,7 @@ class Menu extends StatelessWidget {
       ), //container
 
 
-      SizedBox( height: 100,  ),
+      SizedBox( height: 60,  ),
 
 
 
@@ -122,7 +124,7 @@ class Menu extends StatelessWidget {
       ), //container
 
 
-      SizedBox( height: 90,  ),
+      SizedBox( height: 60,  ),
 
       Container(
 
@@ -160,6 +162,44 @@ class Menu extends StatelessWidget {
       ), //container
 
     SizedBox( height: 50,  ),
+    Container(
+
+    height: 60,
+    alignment: Alignment.centerLeft,
+    decoration: BoxDecoration(
+    color: Color(0xFFF0660000),
+    borderRadius: BorderRadius.all(Radius.circular(18.0)),
+
+    ), //boxdecoration
+
+    child: SizedBox.expand(
+    child: FlatButton(
+    child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+    Text(
+    "HISTÓRICO",
+    style: TextStyle(
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+    fontSize: 20,
+    ), //style ,
+    textAlign: TextAlign.center,
+    ), //text
+    ],
+    //widget
+    ), //row
+    onPressed: () => {Navigator.push(
+    context,
+    MaterialPageRoute(builder:(context)=>  Tabela() ),
+    ),},
+    ), //flatbutton
+    ), //sizedbox
+    ), //container
+
+
+
+    SizedBox( height: 40,  ),
 
 
     Container(
