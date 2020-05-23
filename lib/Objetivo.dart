@@ -46,7 +46,7 @@ class Objetivo extends StatelessWidget {
       Text(
 
 
-        "O objetivo do projeto junto mas próximos  é arrecadar alimentos , produtos de limpeza e higiene pessoal "
+        "O objetivo do projeto JUNTOS PARA O PRÓXIMO  é arrecadar alimentos , produtos de limpeza e higiene pessoal "
         "para pessoas  que estão necessitadas desses items."
             "No aplicativo você tem a opção de doar ou de solicitar algum material em necessidade. ",
 
