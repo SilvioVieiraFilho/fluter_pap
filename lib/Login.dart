@@ -24,7 +24,7 @@ class Login extends StatelessWidget {
             ),
 
         Text(
-          "JUNTOS PELO O PRÓXIMO  ",
+          "JUNTOS PELO  PRÓXIMO  ",
           textAlign: TextAlign.center,
 
           style: TextStyle(
